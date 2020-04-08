@@ -1,0 +1,356 @@
+/* COMMON */
+.claerfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #262626;
+}
+
+/* 또는 */
+.or--wrapper {
+    display: flex;
+    margin: -10px 40px 10px;
+}
+.or--wrapper .or--line {
+    height: 1px;
+    width: 103px;
+    margin: 24px auto;
+    background: #dbdbdb;
+}
+.or {
+    margin-top: 17px;
+    margin-bottom: 19px;
+}
+
+/* 로그인 로고 */
+.join--logo {
+    width: 175px;
+    height: 51px;
+    margin: 25px 86.5px 0px 86.5px;
+}
+
+/* input-box */
+.login--input {
+    width: 290px;
+    height: 29.6px;
+    margin: 0 auto 16px auto;
+    border-radius: 5px;
+    color: #000000;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    padding: 4px 4px;
+}
+
+.join--input {
+    width: 250px;
+    height: 20px;
+    margin: 0 auto 5px auto;
+    border-radius: 3px;
+    color: #000000;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    padding: 9px 10px 7px 8px;
+}
+
+/* button */
+.btn-login {
+    width: 300px;
+    height: 29.6px;
+    border: 0;
+    outline: 0;
+    margin: 0 44px 16px 44px;
+    background: #b2dffc;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-login.written {
+    width: 300px;
+    height: 29.6px;
+    border: 0;
+    outline: 0;
+    margin: 0 44px 16px 44px;
+    background: #0095f6;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn--wrapper {
+    padding: 5px 0;
+    color: #fff;
+    margin-top: 15px;
+    /* text-align: center; */
+    /* align-items: baseline; */
+}
+
+.btn-join {
+    width: 268px;
+    height: 31.2px;
+    border: 0;
+    outline: 0;
+    margin: 15px auto;
+    /* margin-bottom: 15px; */
+    background: #b2dffc;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-join.written {
+    width: 268px;
+    height: 31.2px;
+    border: 0;
+    outline: 0;
+    margin: 15px auto;
+    background: #0095f6;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+
+
+}
+
+/* 본문 */
+body {
+    background: #f8f8f8;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+.header {
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid gainsboro;
+    background: white;
+    display: flex;
+    /* order: 0; */
+    margin: 0 auto;
+    /* 맨 앞으로 */
+    z-index: 99999;
+}
+
+.container .inner {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    /* position: absolute; */
+}
+
+header .left_side .logo {
+    width: 103px;
+    height: 29px;
+    padding: 15px;
+}
+
+.header .search_box {
+    /* position: relative; */
+
+}
+
+.header .search_box input {
+    width: 185px;
+    height: 28px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 3px 30px;
+    color: #999;
+    font-weight: 400;
+    text-align: left;
+    font-size: 14px;
+    outline: none;
+}
+
+/* 밑에는 아예 안먹는다... 뭔가 잘못쓴듯
+#header .search_box input:focus ~ .fake_field img:nth-child(1){
+    transform:translateX(-75px);
+}
+#header .search_box input:focus ~ .fake_field span:nth-child(1){
+    display: none;
+}
+#header .search_box input::placeholder {
+    font-size: 0;
+    color: gray;
+    text-indent: 10px;
+
+}
+#header .search_box input:focus::placeholder {
+    font-size: 15px;
+} */
+
+
+.right_side {}
+
+.right_side a {
+    text-decoration: none;
+}
+
+.header_icon img {
+    padding: 10px;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+}
+
+.icon_myprofile {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.icon_myprofile.selected {}
+
+.main_content {
+    /* background: oldlace; */
+    width: 935px;
+    height: 1182px;
+    margin: 85px auto 0 auto;
+}
+
+.main_content .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    margin-right: 0px;
+    /* margin-bottom: 80px; */
+
+}
+
+/* section.main_content {
+    position: relative;
+    display: inline-block;
+    top: 84px;
+    left: 23px;
+} */
+footer {
+    /* position: relative; */
+}
+
+footer .footer_wrapper {
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    /* margin-top: 50px; */
+    width: 991.2px;
+    height: 103.6px;
+    align-items: center;
+}
+
+.footer_left>ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_left ul li {
+    font-size: 12px;
+    margin-right: 16px;
+    font-weight: 900;
+    /* font-family: -apple-system, sans-serif; */
+}
+
+.footer_left ul li a {
+    text-decoration: none;
+    color: #00376b;
+}
+
+.footer_left ul li span {
+    text-decoration: none;
+    color: #00376b;
+    cursor: pointer;
+}
+
+.footer_left ul li select {
+    display: none;
+}
+
+/* 언어 버튼 클릭될때 쫙 보여주고 싶은데... */
+.footer_right {
+    font-size: 12px;
+    color: #8e8e8e;
+    font-weight: 900;
+}
+
+.text-m {
+    font-size: 26px;
+    color: #262626;
+    font-weight: 300;
+}
+
+.text-s {
+    font-size: 14px;
+}
+
+.text-g {
+    font-size: 14px;
+    color: #828282;
+    line-height: 1.3;
+}
+
+.text-b {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.text-mb {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+
+.text-ss {
+    font-size: 12px;
+}
+.text-ssg {
+    font-size: 12px;
+    color: #828282;
+}
+
+
+.text-ssb {
+    font-size: 12px;
+    font-weight: bold;
+    color: #8e8e8e;
+}
+
+.text-ssg.selected {
+    color: #000;
+    font-weight: 600;
+}
+
