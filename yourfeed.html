@@ -14,6 +14,27 @@
 </head>
 
 <body>
+    <!-- modal 창 (1)-->
+    <div class="modal hidden">
+        <div class="md_overlay"></div>
+        <div class="md_content">
+            <div class="modal_wrapper">
+                <div class="wrap">
+                    <div class="wrap-report">
+                        <div>사용자 신고</div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div>이 사용자 차단하기</div>
+                </div>
+                <div class="wrap_bot">
+                    <button class="btn_close">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="container">
 
         <header class="header">
@@ -88,6 +109,7 @@
                                     <button class="btn-recom">
                                         <img src="./img/add-on.png" alt="추천계정">
                                     </button>
+                                    <!-- 모달창1 -->
                                     <div class="btn-ban">
                                         <img src="./img/ban.png" alt="차단 버튼">
                                     </div>
@@ -99,10 +121,12 @@
                                     <div class="feed_count text-s">게시물</div>
                                     <div class="feed_number text-b">22</div>
                                 </div>
+                                <!-- 모달창2 -->
                                 <div class="mypro_follower feed--num cursor">
                                     <div class="feed_count text-s">팔로워</div>
                                     <div class="follow_num text-b">155</div>
                                 </div>
+                                <!-- 모달창3 -->
                                 <div class="mypro_following feed--num cursor">
                                     <div class="feed_count text-s">팔로우</div>
                                     <div class="following_num text-b">100</div>
@@ -273,6 +297,7 @@
             </div>
         </footer>
     </div>
+    <script src="./javascript/yourfeed.js"></script>
 </body>
 
 </html>

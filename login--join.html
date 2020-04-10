@@ -13,6 +13,9 @@
 
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -43,12 +46,12 @@
                         <div class="or--line"></div>
                     </div>
                     <form action="##" method="POST">
-                        <input type="email" placeholder="이메일 주소" class="join--input">
-                        <input type="text" placeholder="성명" class="join--input">
-                        <input type="text" placeholder="사용자 이름" class="join--input">
-                        <input type="password" placeholder="비밀번호" class="join--input">
+                        <input type="email" id="join_email" placeholder="이메일 주소" class="join--input">
+                        <input type="text" id="join_name" placeholder="성명" class="join--input">
+                        <input type="text" id="join_nickname" placeholder="사용자 이름" class="join--input">
+                        <input type="password" id="join_pw" placeholder="비밀번호" class="join--input">
                         <!-- <button type="submit" class="btn-join" disabled>가입</button> -->
-                        <button type="submit" class="btn-join written">가입</button>
+                        <button type="submit" id="join_complete" class="btn-join written" disabled="true">가입</button>
                     </form>
                     <div class="policy--wrapper">
                         <div>가입하면 Instagram의
@@ -155,6 +158,8 @@
             </div>
         </footer>
     </div>
+    
+    <script src="./javascript/login_join.js"></script>
 </body>
 
 

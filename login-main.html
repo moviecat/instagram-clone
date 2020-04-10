@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/login-pw.css">
+    <link rel="stylesheet" href="./css/login-join.css">
+    <link rel="stylesheet" href="./css/login-main.css">
 
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
@@ -17,53 +20,73 @@
 
 </head>
 
+
 <body>
     <div class="container">
-
-        <header class="header">
-            <div class="inner">
-                <div class="left_side">
-
-                    <div class="logo">
-                        <a href="./index.html">
-                            <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
-                                alt="인스타그램 로고">
+        <div class="wrappers">
+            <div id="back_pic">
+                <img id="img_phone" src="./img/image01.jpg">
+            </div>
+            <!-- <section class="main_content">
+                <div class="wrapper"></div>
+            </section> -->
+    
+            <section class="login--sub">
+                <div class="sub--wrapper">
+                    <div class="sub--box">
+                        <!-- <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+                            alt="인스타그램 로고" class="join--logo"> -->
+                        <img src="./img/instagram5.png"
+                            alt="인스타그램 로고" class="join--logo" style="width: 185px;height: 70px;">
+    
+                        <form action="#" method="POST">
+                            <input type="email" id="login_id" placeholder="이메일 주소" class="join--input">
+                            <input type="password" id="login_pw" placeholder="비밀번호" class="join--input">
+                            <!-- <button disabled="true" type="submit" id="login_request" class="btn-join">로그인</button> -->
+                            <button type="submit" disabled="true" id="login_request" class="btn-join written">로그인</button>
+                        </form>
+                        <div class="or--wrapper">
+                            <div class="or--line"></div>
+                            <div class="or text-ssb">또는</div>
+                            <div class="or--line"></div>
+                        </div>
+                        <a href="#">
+                            <div class="text-mb" style="color:#385185">
+                                <img src="./img/facebook-logo2.png" alt="facebook" style="width: 16px;height: 16px;">
+                                Facebook으로 로그인
+                            </div>
+                        </a>
+                        <a href="./login--pw.html">
+                            <div class="text-ss pw">비밀번호를 잊으셨나요?</div>
                         </a>
                     </div>
                 </div>
-
-             
-            </div>
-        </header>
-
-        <!-- <section class="main_content">
-            <div class="wrapper"></div>
-        </section> -->
-        <section class="login--pw">
-            <div class="pw--wrapper">
-                <div class="pw--box">
-                    <img src="./img/icon_locker.png" class="icon-locker" alt="자물쇠 아이콘">
-                
-                    <div class="text-b text-margin">로그인에 문제가 있나요?</div>
-                    <div class="text-g text-margin"> 사용자 이름 또는 이메일을 입력하면 다시 계정에 로그인할 수 있는 링크를 보내드립니다.
-                    </div>
-                    <form action="#" method="POST">
-                        <input type="email" class="login--input" id="pw_find" placeholder="이메일을 입력해주세요.">
-                        <!-- <button type="submit" class="btn-login" id="pw_send" disabled="ture">로그인 링크 보내기</button> -->
-                        <button type="submit" id="pw_send" disabled="true" class="btn-login written">로그인 링크 보내기</button>
-                    </form>
-                    <div class="or--wrapper">
-                        <div class="or--line"></div>
-                        <div class="or text-ssb">또는</div>
-                        <div class="or--line"></div>
-                    </div>
-                    <a href="./login--join.html" class="text-mb"><div>새 계정 만들기</div></a>
-                    <div class="back-login">
-                        <a href="./login--sub.html" class="text-mb"><div>로그인으로 돌아가기</div></a>
+    
+                <div class="join--login--wrapper">
+                    <div class="join--login text-s">
+                        계정이 없으신가요? <a href="./login--join.html" class="text-blue">가입하기</a>
                     </div>
                 </div>
-            </div>
+    
+                <div class="app--download">
+                    <div class="app--induce text-s">앱을 다운로드 하세요.</div>
+                    <div class="app--install">
+                        <a href="https://apps.apple.com/app/instagram/id389801252?vt=lo" target="_blank">
+                            <img src="./img/install-ios.png" class="ios" alt="App Store에서 다운로드 하기">
+                            <!-- <div class="ios text-ss">App Store에서 다운로드 하기</div> -->
+                        </a>
+                        <a href="https://tinyurl.com/tsudzog" target="_blank">
+                            <img src="./img/install-android.png" class="android" alt="다운로드하기 Google Play">
+                            <!-- <div class="android text-ss">다운로드하기 Google Play</div> -->
+                        </a>
+                    </div>
+                </div>
+        </div>
+
         </section>
+
+
+
 
         <footer>
             <div class="footer_wrapper">
@@ -141,7 +164,9 @@
             </div>
         </footer>
     </div>
-    <script src="./javascript/login_pw_find.js"></script>
+    <script src="./javascript/login_main.js"></script>
+
+
 </body>
 
 

@@ -16,6 +16,9 @@
 
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 
@@ -34,10 +37,10 @@
                         alt="인스타그램 로고" class="join--logo" style="width: 185px;height: 70px;">
 
                     <form action="#" method="POST">
-                        <input type="email" placeholder="이메일 주소" class="join--input">
-                        <input type="password" placeholder="비밀번호" class="join--input">
-                        <button type="submit" class="btn-join">로그인</button>
-                        <!-- <button type="submit" class="btn-join written">로그인</button> -->
+                        <input type="email" id="login_id" placeholder="이메일 주소" class="join--input">
+                        <input type="password" id="login_pw" placeholder="비밀번호" class="join--input">
+                        <!-- <button disabled="true" type="submit" id="login_request" class="btn-join">로그인</button> -->
+                        <button type="submit" disabled="true" id="login_request" class="btn-join written">로그인</button>
                     </form>
                     <div class="or--wrapper">
                         <div class="or--line"></div>
@@ -157,6 +160,7 @@
             </div>
         </footer>
     </div>
+    <script src="./javascript/login_main.js"></script>
 </body>
 
 

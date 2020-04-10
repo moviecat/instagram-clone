@@ -227,3 +227,70 @@
 .myfeed:hover .fav {
     opacity: 1;
 }
+
+/* 모달창 구현 */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.md_overlay {
+    background-color: rgba(0, 0, 0, 0.60);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.md_content {
+    width: 400px;
+    height: 144px;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal button {
+    display: block;
+    margin: 0 auto;
+}
+
+.modal_wrapper .wrap {
+    width: 100%;
+    /* height: 48px; */
+    border-bottom: 1px solid gainsboro;
+    font-size: 14px;
+    color: #ed4956;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal_wrapper .wrap div {
+/* 수직 정렬.... 왜 안돼ㅜㅜ */
+    /* background: ; */
+    margin: 17.5px auto;
+}
+
+.modal_wrapper .wrap_bot .btn_close {
+    width: 100%;
+    height: 48px;
+    padding: 0 auto;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_close {
+    all: unset;
+}

@@ -14,10 +14,48 @@
 </head>
 
 <body>
+    <!-- 모달--사용자 신고 -->
+    <div class="modal2 hidden2">
+        <div class="md_overlay2"></div>
+        <div class="md_content2">
+            <div class="modal_wrapper2">
+                <div class="wrap">
+                    <div>비밀번호 변경</div>
+                </div>
+                <div class="wrap">
+                    <div>앱 및 웹사이트</div>
+                </div>
+                <div class="wrap">
+                    <div>알림</div>
+                </div>
+                <div class="wrap">
+                    <div>공개 범위 및 보안</div>
+                </div>
+                <div class="wrap">
+                    <div>로그인 활동</div>
+                </div>
+                <div class="wrap">
+                    <div>Instagram에서 보낸 이메일</div>
+                </div>
+                <div class="wrap">
+                    <div>문제 신고</div>
+                </div>
+                <a href="./login--pw.html">
+                    <div class="wrap">
+                        <div>로그아웃</div>
+                    </div>
+                </a>
+               
+                <div class="wrap_bot">
+                    <button class="btn_close2">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
 
         <header class="header">
-            <!-- <div class="modal">안녕? 큐큐큐큐큐큐ㅠ큐</div> -->
             <div class="inner">
                 <div class="left_side">
 
@@ -78,13 +116,13 @@
                                 <div class="mypro_id text-m">ByulStarGram</div>
                                 <!-- <div class="mypro_edit">프로필 편집</div> -->
                                 <div class="mypro_edit">
-                                    <a href="./login--pw.html">
+                                    <a href="#">
                                         <button class="feed--button text-b">
                                             프로필 편집
                                         </button>
                                     </a>
-                                    <div class="setting">
-                                        <a href="./yourfeed.html"><img src="./img/icon_setting.png" alt="설정"></a>
+                                    <div class="setting btn_setting">
+                                        <img src="./img/icon_setting.png" class="btn_setting" alt="설정">
                                     </div>
                                     
                                 </div>
@@ -147,13 +185,13 @@
                     <div class="feed_content">
                         <div class="feed_mine">
                             <a href="#" class="myfeed">
-                                <div class="fav">dafas</div>
+                                <div class="fav">1</div>
                             </a>
                             <a href="#" class="myfeed">
-                                <div class="fav">dafas</div>
+                                <div class="fav">2</div>
                             </a>
                             <a href="#" class="myfeed">
-                                <div class="fav">dafas</div>
+                                <div class="fav">3</div>
                             </a>
                             <!-- <a href="#">
                                 <div class="myfeed"></div>
@@ -166,15 +204,21 @@
                                > -->
                         </div>
                         <div class="feed_mine">
-                            <a href="#">
+                            <a href="#" class="myfeed">
+                                <div class="fav">4</div>
+                            </a>
+                            <a href="#" class="myfeed">
+                                <div class="fav">5</div>
+                            </a>
+                            <a href="#" class="myfeed">
+                                <div class="fav">6</div>
+                            </a>
+                            <!-- <a href="#">
                                 <div class="myfeed"></div>
                             </a>
                             <a href="#">
                                 <div class="myfeed"></div>
-                            </a>
-                            <a href="#">
-                                <div class="myfeed"></div>
-                            </a>
+                            </a> -->
 
                             <!-- <img src="img/pic_3.jpg" alt="피드게시물1" class="myfeed"
                                > -->
@@ -277,6 +321,8 @@
             </div>
         </footer>
     </div>
+
+   <script src="./javascript/myfeed.js"></script>
 </body>
 
 </html>
