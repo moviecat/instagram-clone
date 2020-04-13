@@ -13,17 +13,6 @@ $(function () {
     });
 })
 
-// 유효성 검사 ( 비밀번호 6자리 이상 )
-// let pw_check = document.getElementById('join_pw');
-// let join_complete = document.getElementById('join_complete');
-
-// function chk(){
-//     console.log(pw_check.value.length);
-//     if(pw_check.value.length < 6){
-//         alert("비밀번호는 6자리 이상 되어야합니다.");
-//     } else {
-//         console.log('지나갑니다.');
-//     }
+// function openWelcome(){
+//     location.href="./join_welcome.html";
 // };
-
-// join_complete.addEventListener("click", chk);

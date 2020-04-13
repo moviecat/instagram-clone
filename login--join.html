@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Document</title>
+    <title>Instagram</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/login-pw.css">
@@ -27,8 +27,8 @@
         <section class="login--join">
             <div class="join--wrapper">
                 <div class="join--box">
-                    <img src="./img/instagram5.png"
-                        alt="인스타그램 로고" class="join--logo" style="width: 185px;height: 70px;">
+                    <img src="./img/instagram5.png" alt="인스타그램 로고" class="join--logo"
+                        style="width: 185px;height: 70px;">
 
                     <div class="join--induce">친구들의 사진과 동영상을 보려면<br> 가입하세요.</div>
 
@@ -45,13 +45,17 @@
                         <div class="or text-ssb">또는</div>
                         <div class="or--line"></div>
                     </div>
-                    <form action="##" method="POST">
+                    <form action="./join_welcome.html" method="POST">
                         <input type="email" id="join_email" placeholder="이메일 주소" class="join--input">
                         <input type="text" id="join_name" placeholder="성명" class="join--input">
                         <input type="text" id="join_nickname" placeholder="사용자 이름" class="join--input">
                         <input type="password" id="join_pw" placeholder="비밀번호" class="join--input">
                         <!-- <button type="submit" class="btn-join" disabled>가입</button> -->
-                        <button type="submit" id="join_complete" class="btn-join written" disabled="true">가입</button>
+                        <button type="submit" id="join_complete" class="btn-join written" disabled="true">
+                        <!--  onclick="location.href='./join_welcome.html'" -->
+                        <!-- onclick="return openWelcome()" -->
+                        가입
+                        </button>
                     </form>
                     <div class="policy--wrapper">
                         <div>가입하면 Instagram의
@@ -158,7 +162,7 @@
             </div>
         </footer>
     </div>
-    
+
     <script src="./javascript/login_join.js"></script>
 </body>
 
