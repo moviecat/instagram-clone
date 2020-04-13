@@ -20,7 +20,7 @@
         <div class="md_content2">
             <div class="modal_wrapper2">
                 <div class="wrap">
-                    <div>비밀번호 변경</div>
+                    <a href="./setting_pw.html"><div>비밀번호 변경</div></a>
                 </div>
                 <div class="wrap">
                     <div>앱 및 웹사이트</div>
@@ -40,7 +40,7 @@
                 <div class="wrap">
                     <div>문제 신고</div>
                 </div>
-                <a href="./login--pw.html">
+                <a href="./login--sub.html">
                     <div class="wrap">
                         <div>로그아웃</div>
                     </div>
@@ -53,10 +53,33 @@
         </div>
     </div>
 
+    <!-- 모달창 프로필 사진 바꾸기 -->
+    <div class="modal3 hidden3">
+        <div class="md_overlay3"></div>
+        <div class="md_content3">
+            <div class="modal_wrapper3">
+                <div class="wrap_title">
+                    <div>프로필 사진 바꾸기</div>
+                </div>
+                <div class="wrap_blue wrap">
+                    <div>사진 업로드</div>
+                </div>
+                <div class="wrap_red wrap">
+                    <div>현재 사진 삭제</div>
+                </div>
+
+                <div class="wrap_bot">
+                    <button class="btn_close3">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
 
         <header class="header">
             <div class="inner">
+               
                 <div class="left_side">
 
                     <div class="logo">
@@ -81,6 +104,7 @@
                 </div>
 
                 <div class="right_side">
+                    <div class="circle"></div>
                     <div class="header_icon">
                         <a href="./index.html">
                             <img src="img/icom_empty home.png" alt="icon_home_empty" class="icon">
@@ -94,7 +118,7 @@
                         </a>
 
                         <a href="./myfeed.html">
-                            <img src="img/profile1.jpg" alt="icon_myprofile" class="icon_myprofile selected">
+                            <img src="./img/pic_3.jpg" alt="icon_myprofile" class="icon_myprofile selected">
                         </a>
                     </div>
 
@@ -109,14 +133,14 @@
                     <div class="feed_top">
                         <div class="pro_img">
                             <!-- 크기 조절하기 -->
-                            <img src="img/pic_3.jpg" alt="내 프로필 사진">
+                            <img src="img/pic_3.jpg" alt="내 프로필 사진" id="img_profile">
                         </div>
                         <div class="mypro--text">
                             <div class="mypro_top">
                                 <div class="mypro_id text-m">ByulStarGram</div>
                                 <!-- <div class="mypro_edit">프로필 편집</div> -->
                                 <div class="mypro_edit">
-                                    <a href="#">
+                                    <a href="./setting_profile.html">
                                         <button class="feed--button text-b">
                                             프로필 편집
                                         </button>
@@ -155,11 +179,7 @@
 
                     </div>
                 </div>
-                <!-- <section class="feed_mid">
-                <div class="story1"></div>
-                <div class="story2"></div>
-            </section> -->
-                <!-- 아이콘 모양 수정....필요 -->
+             
                 <div class="content--nav">
                     <ul>
                         <li class="feed-nav selected">
@@ -185,13 +205,42 @@
                     <div class="feed_content">
                         <div class="feed_mine">
                             <a href="#" class="myfeed">
-                                <div class="fav">1</div>
+                                <div class="fav">
+                                    <div class="like_num">
+                                        <img src="./img/icon_post_heart.png" alt="좋아요수" style="width: 19px; height: 22px;">
+                                        <div>6</div>
+                                    </div>
+                                    <div class="comment_num">
+                                        <img src="./img/icon_post_comment.png" alt="댓글수" style="width: 22px; height: 22px;">
+                                        <div>6</div>
+                                    </div>
+                                </div>
                             </a>
                             <a href="#" class="myfeed">
-                                <div class="fav">2</div>
+                                <div class="fav">
+                                    <div class="like_num">
+                                        <img src="./img/icon_post_heart.png" alt="좋아요수" style="width: 19px; height: 22px;">
+                                        <div>10</div>
+                                    </div>
+                                    <div class="comment_num">
+                                        <img src="./img/icon_post_comment.png" alt="댓글수" style="width: 22px; height: 22px;">
+                                        <div>15</div>
+                                    </div>
+
+                                </div>
                             </a>
                             <a href="#" class="myfeed">
-                                <div class="fav">3</div>
+                                <div class="fav">
+                                    <div class="like_num">
+                                        <img src="./img/icon_post_heart.png" alt="좋아요수" style="width: 19px; height: 22px;">
+                                        <div>22</div>
+                                    </div>
+                                    <div class="comment_num">
+                                        <img src="./img/icon_post_comment.png" alt="댓글수" style="width: 22px; height: 22px;">
+                                        <div>5</div>
+                                    </div>
+
+                                </div>
                             </a>
                             <!-- <a href="#">
                                 <div class="myfeed"></div>
@@ -204,6 +253,111 @@
                                > -->
                         </div>
                         <div class="feed_mine">
+                            <a href="#" class="myfeed">
+                                <div class="fav">
+                                    <div class="like_num">
+                                        <img src="./img/icon_post_heart.png" alt="좋아요수" style="width: 19px; height: 22px;">
+                                        <div>6</div>
+                                    </div>
+                                    <div class="comment_num">
+                                        <img src="./img/icon_post_comment.png" alt="댓글수" style="width: 22px; height: 22px;">
+                                        <div>6</div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                            <a href="#" class="myfeed">
+                                <div class="fav">
+                                    <div class="like_num">
+                                        <img src="./img/icon_post_heart.png" alt="좋아요수" style="width: 19px; height: 22px;">
+                                        <div>6</div>
+                                    </div>
+                                    <div class="comment_num">
+                                        <img src="./img/icon_post_comment.png" alt="댓글수" style="width: 22px; height: 22px;">
+                                        <div>6</div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                            <a href="#" class="myfeed">
+                                <div class="fav">
+                                    <div class="like_num">
+                                        <img src="./img/icon_post_heart.png" alt="좋아요수" style="width: 19px; height: 22px;">
+                                        <div>6</div>
+                                    </div>
+                                    <div class="comment_num">
+                                        <img src="./img/icon_post_comment.png" alt="댓글수" style="width: 22px; height: 22px;">
+                                        <div>6</div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                            <!-- <a href="#">
+                                <div class="myfeed"></div>
+                            </a>
+                            <a href="#">
+                                <div class="myfeed"></div>
+                            </a> -->
+
+                            <!-- <img src="img/pic_3.jpg" alt="피드게시물1" class="myfeed"
+                               > -->
+                        </div>
+                        <div class="feed_mine">
+                            <a href="#">
+                                <div class="myfeed">
+                                    <div class="fav">
+                                        <div class="like_num">
+                                            <img src="./img/icon_post_heart.png" alt="좋아요수" style="width: 19px; height: 22px;">
+                                            <div>6</div>
+                                        </div>
+                                        <div class="comment_num">
+                                            <img src="./img/icon_post_comment.png" alt="댓글수" style="width: 22px; height: 22px;">
+                                            <div>6</div>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="myfeed">
+                                    <div class="fav">
+                                        <div class="like_num">
+                                            <img src="./img/icon_post_heart.png" alt="좋아요수" style="width: 19px; height: 22px;">
+                                            <div>6</div>
+                                        </div>
+                                        <div class="comment_num">
+                                            <img src="./img/icon_post_comment.png" alt="댓글수" style="width: 22px; height: 22px;">
+                                            <div>6</div>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="myfeed">
+                                    <div class="fav">
+                                        <div class="like_num">
+                                            <img src="./img/icon_post_heart.png" alt="좋아요수" style="width: 19px; height: 22px;">
+                                            <div>6</div>
+                                        </div>
+                                        <div class="comment_num">
+                                            <img src="./img/icon_post_comment.png" alt="댓글수" style="width: 22px; height: 22px;">
+                                            <div>6</div>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+                            </a>
+
+                        </div>
+                        
+                        <!-- <div class="feed_mine">
                             <a href="#" class="myfeed">
                                 <div class="fav">4</div>
                             </a>
@@ -213,33 +367,9 @@
                             <a href="#" class="myfeed">
                                 <div class="fav">6</div>
                             </a>
-                            <!-- <a href="#">
-                                <div class="myfeed"></div>
-                            </a>
-                            <a href="#">
-                                <div class="myfeed"></div>
-                            </a> -->
-
-                            <!-- <img src="img/pic_3.jpg" alt="피드게시물1" class="myfeed"
-                               > -->
-                        </div>
-                        <div class="feed_mine">
-                            <a href="#">
-                                <div class="myfeed"></div>
-                            </a>
-                            <a href="#">
-                                <div class="myfeed"></div>
-                            </a>
-                            <a href="#">
-                                <div class="myfeed"></div>
-                            </a>
-
-                            <!-- <img src="img/pic_3.jpg" alt="피드게시물1" class="myfeed"
-                               > -->
-                        </div>
-                        <!-- <div class="feed_IGTV">IGTV</div>
-                    <div class="feed_saved">저장됨</div>
-                    <div class="feed_tagged">태그됨</div> -->
+                            
+                        </div> -->
+                      
                     </div>
                 </div>
             </div>

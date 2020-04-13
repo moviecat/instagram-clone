@@ -11,6 +11,7 @@ var obTimeOut; // clearTimeout() 함수를 이용하여 Timeout 을 취소하기
 var imgAry = ["./img/image01.jpg", "./img/image02.jpg", "./img/image03.jpg", "./img/image04.jpg"];
 
 var index = -1;
+
 // 스스로 자신을 호출하는 재귀함수 (Recursive Function)
 function ShowDefaultRotate() {
     index++;
@@ -35,3 +36,15 @@ function transImg() {
 
 // 윈도우 로드시 이미지 변환함수 실행
 window.onload = transImg();
+
+
+// 비밀번호 표시 / 미표시
+let show_pw = document.getElementById('show_pw');
+let login_pw = document.getElementById('login_pw');
+
+function show_password(){
+    console.log(login_pw.type);
+    login_pw.type = 'text';
+};
+
+login_pw.addEventListener('click', show_password);

@@ -25,7 +25,7 @@ section.login--sub {
 
 .sub--wrapper {
     width: 350px;
-    height: 377.8px;
+    /* height: 377.8px; */
     margin: 0 auto;
     background: white;
     text-align: center;
@@ -41,4 +41,40 @@ section.login--sub {
 }
 .pw {
     padding-top: 9px;
+    padding-bottom: 15px;
+}
+.facebook_wrap {
+    color: #385185;
+    margin-bottom: 15px;
+}
+.facebook {
+    width: 16px;
+    height: 16px;
+}
+.fault_input {
+    font-size: 14px; 
+    color: red;
+    margin: 10px auto;
+    font-weight: 400;
+}
+.pw_wrap {
+    display: flex;
+    position: relative;
+}
+.show_wrap {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    width: 100px;
+    height: 38px;
+
+
+}
+.show_pw div {
+    all: unset;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 12px auto;
+    cursor: pointer;
 }
