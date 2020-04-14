@@ -4,7 +4,8 @@
     display: block;
     clear: both;
 }
-
+body {
+}
 .cursor {
     cursor: pointer;
 }
@@ -363,4 +364,9 @@ footer .footer_wrapper {
     color: #38a5ec;
     font-size: 14px;
     font-weight: bold;
+}
+
+.text-sssg {
+    font-size: 10px;
+    color: #8e8e8e;
 }
