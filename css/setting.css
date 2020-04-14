@@ -1,7 +1,7 @@
 section {
     background: white;
     width: 933px;
-    height: 674px;
+    height: 714px;
     margin: 0 auto;
     display: flex;
     margin-top: 85px;
@@ -22,6 +22,7 @@ section {
     font-size: 16px;
     cursor: pointer;
 }
+
 /* .setting_list ul li:first-child {
     border-left: 2px solid black;
     font-weight: bold;
@@ -34,6 +35,7 @@ section {
     border-left: 2px solid black;
     font-weight: bold;
 }
+
 .setting_profile {
     display: flex;
     width: 696px;
@@ -41,11 +43,13 @@ section {
     margin-top: 32px;
     /* margin-bottom: 15px; */
 }
+
 .setting_profile aside {
     width: 194px;
     height: 41.2px;
 
 }
+
 .setting_profile div div {
     font-size: 20px;
 }
@@ -67,10 +71,19 @@ section {
     padding: 0 30px;
 }
 
+#blah {
+    margin-left: 15px;
+    margin-top: 1px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
 .setting_contents {
     display: flex;
     margin: 13px auto;
 }
+
 .setting_contents aside {
     display: block;
     width: 130px;
@@ -93,6 +106,14 @@ form input {
     height: 30px;
 }
 
+form textarea {
+    /* all: unset; */
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    width: 295px;
+    height: 50px;
+}
+
 form input.input_long {
     height: 55px;
 }
@@ -109,6 +130,7 @@ form input.input_long {
 .check_wrap {
     display: flex;
 }
+
 .checkbox {
     width: 16px;
     height: 16px;
@@ -126,6 +148,7 @@ form input.input_long {
 .checkbox:hover #checker {
     display: initial;
 }
+
 .checkbox #checker {
     position: absolute;
     width: 10.6px;
@@ -138,24 +161,27 @@ form input.input_long {
 .submit_wrap {
     width: 328.7px;
     height: 30px;
-    vertical-align: middle; 
+    vertical-align: middle;
     display: table-cell;
 }
+
 .submit_wrap button {
     all: unset;
     cursor: pointer;
 }
+
 button.btn_submit {
     width: 48px;
     height: 30px;
     background: #0095f6;
-    font-size: 14px;   
+    font-size: 14px;
     color: #fff;
     margin: 0 auto;
     text-align: center;
     border-radius: 5px;
 
 }
+
 button.text-blue {
     color: #38a5ec;
     font-size: 14px;
