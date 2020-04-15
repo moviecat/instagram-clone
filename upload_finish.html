@@ -8,7 +8,7 @@
     <title>Instagram</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/setting.css">
+    <link rel="stylesheet" href="./css/join_welcome.css">
 
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
@@ -19,7 +19,6 @@
 
 <body>
     <div class="container">
-
 
         <header class="header">
             <div class="inner">
@@ -33,122 +32,22 @@
                     </div>
                 </div>
 
-                <div class="middle_side">
-                    <div class="search_box">
-                        <!-- <img src="img/icon_search.png" alt="돋보기" style="width: 10px;"> -->
-                        <input type="text" placeholder="검색" id="search_field">
-                    </div>
-
-                    <!-- <div class="fake_field">
-                        <img src="img/icon_search.png" alt="돋보기" style="width: 10px;">
-                        <span>검색</span>
-                        <img src="img/icon_search_cancel.png" alt="취소 버튼" style="width: 10px;">
-                    </div> -->
-                </div>
-
-                <div class="right_side">
-                    <div class="header_icon">
-                        <a href="./index.html">
-                            <img src="img/icom_empty home.png" alt="icon_home_empty" class="icon">
-                        </a>
-                        <a href="./new_post.html">
-                            <img src="img/icon_newfeed.png" alt="icon_new_feed" class="icon">
-                        </a>
-
-                        <a href="#" class="history">
-                            <img src="img/icon_heart.png" alt="icon_history" class="icon">
-                        </a>
-
-                        <a href="./myfeed.html">
-                            <img src="img/pic_3.jpg" alt="icon_myprofile" class="icon_myprofile selected">
-                        </a>
-                    </div>
-
-                </div>
+             
             </div>
         </header>
 
-        <!-- <section class="main_content">
-            <div class="wrapper"></div>
-        </section> -->
-        <section class="setting_wrapper">
-            <div class="setting_list">
-                <ul>
-                    <li class="m_text"><a href="./setting_profile.html">프로필 편집</a></li>
-                    <li class="m_text"><a href="#" class="ckeck">비밀번호 변경</a></li>
-                    <li class="m_text"><a href="">앱 및 웹사이트</a></li>
-                    <li class="m_text"><a href="">이메일 및 SMS</a></li>
-                    <li class="m_text"><a href="">푸시 알림</a></li>
-                    <li class="m_text"><a href="">연락처 관리</a></li>
-                    <li class="m_text"><a href="">공개 범위 및 보안</a></li>
-                    <li class="m_text"><a href="">로그인 활동</a></li>
-                    <li class="m_text"><a href="">Instagram에서 보낸 이메일</a></li>
-                </ul>
-            </div>
-
-
-            <div class="setting_box">
-                <div class="setting_profile">
-                    <aside class="claerfix">
-                        <img src="./img/pic_3.jpg" alt="프로필 사진">
-                    </aside>
-                    <div>
-                        <div>byulstargram</div>
+        <section class="con_wrapper">
+            <div class="welcome">
+                <div class="welcome_box">
+                    <img src="./img/talk.png" class="icon_finish" alt="피드 올리기가 완료되었습니다.">
+                
+                    <div class="text-b text-margin">
+                        피드 업로드가<br>
+                         완료 되었습니다
                     </div>
-                </div>
-
-                <form action="" method="POST">
-                    <div class="setting_contents">
-                        <aside>
-                            <label>이전 비밀번호</label>
-                        </aside>
-                        <div>
-                            <input type="text" id="set_name">
-                        </div>
-                    </div>
-    
-                    <div class="setting_contents">
-                        <aside>
-                            <label>새 비밀번호</label>
-                        </aside>
-                        <div>
-                            <input type="text" id="set_name">
-                        </div>
-                    </div>
-    
-                    <div class="setting_contents">
-                        <aside>
-                            <label>새 비밀번호 확인</label>
-                        </aside>
-                        <div>
-                            <input type="text" id="set_name">
-                        </div>
-                    </div>
-    
                     
-                    <div class="setting_contents">
-                        <aside>
-                            <label></label>
-                        </aside>
-                        <div>
-                            <button type="submit" class="btn_pw_change">비밀번호 변경</button>
-                        </div>
-                    </div>
-                    <div class="setting_contents">
-                        <aside>
-                            <label></label>
-                        </aside>
-                        <div class="submit_wrap">
-                            <a href="#" class="text-blue">비밀번호를 잊으셨나요?</a>
-                        </div>
-                    </div>
-                </form>
+                </div>
             </div>
-
-
-
-
-
         </section>
 
         <footer>
@@ -227,7 +126,7 @@
             </div>
         </footer>
     </div>
-    <script src="./javascript/login_pw_find.js"></script>
+    <script src="./javascript/upload_finish.js"></script>
 </body>
 
 

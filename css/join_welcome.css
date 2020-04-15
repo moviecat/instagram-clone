@@ -42,3 +42,15 @@
 .back-login a {
     padding: 1px;
 }
+/* 피드 업로드 완료 */
+.finish_wrapper {
+    height: 300.4px;
+    width: 100%;
+    margin: 44px auto;
+}
+
+.icon_finish {
+    width: 100px;
+    height: 100px;
+    margin: 80px 146px 45px 146px;
+}

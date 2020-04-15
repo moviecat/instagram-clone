@@ -10,6 +10,12 @@ body {
     cursor: pointer;
 }
 
+input:focus {
+    outline: 0;
+}
+button:focus {
+    outline: 0;
+}
 a {
     text-decoration: none;
     color: #262626;
